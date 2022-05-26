@@ -40,7 +40,7 @@ class Moto{
         void associar(double new_uid, double cp_bateria);
         void desassociar();
 
-        double gasto();
+        double gasto(); //gasto da bateria
         double acelerar();
         double freiar();
         double get_speed();
@@ -53,10 +53,6 @@ public:
     long long int uid;
     double cps[7][3];
 
-//    ETB(long long int new_uid, double new_cps[6]) {
-//            uid = new_uid;
-//            cps[6] = new_cps[6];
-//    }
 
     void associar_cp( int num_cps, double uid, double per, double charge);
     void desassociar_cp(int num_cp);
