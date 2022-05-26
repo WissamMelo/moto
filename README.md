@@ -61,4 +61,16 @@ Temos as seguintes funcionalidades neste projeto (função/nomenclatura no proje
 - Acesso a todos atributos (uid, soc, host) / get_uid, get_soc, get_host
 
 ![Diagrama do sistema mostrando suas funções](images/moto.png)
+    
+ ## Compilação   
+ Usamos uma ferramenta para compilação e geração de executável CMake como seguinte código para a build, criando um arquivo CMakeLists.txt:
+
+  cmake_minimum_required(VERSION 3.22)
+  project(untitled)
+
+  set(CMAKE_CXX_STANDARD 17)
+
+  add_executable(untitled main.cpp moto.cpp moto.hpp)
+    
+  #### Ápos realizar a build podemos exetucar o código! :)
 
